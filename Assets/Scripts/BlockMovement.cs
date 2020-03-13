@@ -1,22 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BlockMovement : MonoBehaviour
 {
     public Vector3 rotationPoint;
     private float previousTime;
+    public float score;
     public float fallTime = 0.8f;
+
     public static int height = 20;
     public static int width = 13;
     private static Transform[,] grid = new Transform[width, height];
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-
+        score = 0;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -87,6 +88,7 @@ public class BlockMovement : MonoBehaviour
         {
             Destroy(grid[j, i].gameObject);
             grid[j, i] = null;
+            score += 10;
         }
     }
 
@@ -105,9 +107,6 @@ public class BlockMovement : MonoBehaviour
             }
         }
     }
-
-
-
 
     void AddToGrid()
     {
@@ -137,5 +136,14 @@ public class BlockMovement : MonoBehaviour
         }
 
         return true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "DeathWall")
+        {
+            Time.timeScale = 0;
+            Debug.Log("m It's GG man!");
+        }
     }
 }
