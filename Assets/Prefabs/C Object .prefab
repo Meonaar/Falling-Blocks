@@ -335,9 +335,10 @@ GameObject:
   - component: {fileID: 1394300796513624437}
   - component: {fileID: 6699908039614605188}
   - component: {fileID: -5037807755013499638}
+  - component: {fileID: -9017302670747503268}
   m_Layer: 0
   m_Name: 'C Object '
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -373,6 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationPoint: {x: 0.5, y: 0.5, z: 0}
+  score: 0
   fallTime: 0.8
 --- !u!61 &-5037807755013499638
 BoxCollider2D:
@@ -400,3 +402,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-9017302670747503268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723708393663687244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667c5c3f11ca6854fa212379507c5167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -253,9 +253,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6809322176368700491}
   - component: {fileID: 8911413928308337964}
+  - component: {fileID: -8097509066679874527}
   m_Layer: 0
   m_Name: 'ZL Object '
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -291,7 +292,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationPoint: {x: 0, y: 0, z: 0}
-  spawner: {fileID: 0}
+  score: 0
+  fallTime: 0.8
+--- !u!114 &-8097509066679874527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232640911953777434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667c5c3f11ca6854fa212379507c5167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7604189633831791713
 GameObject:
   m_ObjectHideFlags: 0
