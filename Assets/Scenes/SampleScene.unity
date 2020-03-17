@@ -402,6 +402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637949672}
   - component: {fileID: 637949671}
+  - component: {fileID: 637949673}
   m_Layer: 0
   m_Name: DeathBorder
   m_TagString: DeathWall
@@ -443,12 +444,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637949670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.46, y: 18.4, z: 0}
+  m_LocalPosition: {x: 6.46, y: 11.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &637949673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637949670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc8721ed6018e94fa8e0d7b6988484a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &694568907
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +651,7 @@ GameObject:
   - component: {fileID: 1060932712}
   - component: {fileID: 1060932711}
   m_Layer: 5
-  m_Name: Time (1)
+  m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,7 +1074,6 @@ MonoBehaviour:
   - {fileID: 5927180980967306512, guid: 215a816d1702e094494cebc9165d0c30, type: 3}
   - {fileID: 4232640911953777434, guid: f7e01a5f561feb24688034a5dc90afff, type: 3}
   - {fileID: 6841177553695236712, guid: ae2762b1da8e2394fb2182d0cde13b68, type: 3}
-  - {fileID: 6534141128306951821, guid: 6ffd542b61bc7c94294025da2631d8e3, type: 3}
 --- !u!1 &1508668282
 GameObject:
   m_ObjectHideFlags: 0

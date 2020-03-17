@@ -49,7 +49,6 @@ public class BlockMovement : MonoBehaviour
                 transform.position -= new Vector3(0, -1, 0);
                 AddToGrid();
                 CheckForLines();
-
                 this.enabled = false;
                 FindObjectOfType<Spawner>().NewObject();
 
@@ -87,8 +86,10 @@ public class BlockMovement : MonoBehaviour
         {
             Destroy(grid[j, i].gameObject);
             grid[j, i] = null;
-            score += 10;
         }
+
+        score += 10;
+        Debug.Log(score);
     }
 
     void RowDown(int i)
@@ -135,14 +136,5 @@ public class BlockMovement : MonoBehaviour
         }
 
         return true;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "DeathWall")
-        {
-            Time.timeScale = 0;
-            Debug.Log("m It's GG man!");
-        }
     }
 }

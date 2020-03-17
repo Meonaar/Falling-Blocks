@@ -9,7 +9,6 @@ public class Clear : MonoBehaviour
     {
         if (transform.childCount <= 0)
         {
-            Debug.Log("I'm here!");
             Destroy(this.gameObject);
         }
     }
