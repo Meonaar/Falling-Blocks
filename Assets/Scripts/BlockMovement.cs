@@ -7,7 +7,7 @@ public class BlockMovement : MonoBehaviour
 {
     public Vector3 rotationPoint;
     private float previousTime;
-    public float score;
+    public int score;
     public float fallTime = 0.8f;
 
     public static int height = 20;
@@ -20,7 +20,7 @@ public class BlockMovement : MonoBehaviour
     }
     // Update is called once per frame
     void Update()
-    {
+    {        
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.position += new Vector3(-1, 0, 0);
@@ -87,9 +87,7 @@ public class BlockMovement : MonoBehaviour
             Destroy(grid[j, i].gameObject);
             grid[j, i] = null;
         }
-
         score += 10;
-        Debug.Log(score);
     }
 
     void RowDown(int i)
